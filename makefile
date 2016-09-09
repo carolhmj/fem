@@ -1,15 +1,15 @@
 #usando gcc como compilador
-CC = gcc
+CC = g++
 
 #Escolher opengl dependendo do OS
-LINKGL = -lglfw -lGL
+LINKGL = -lglfw -lGL 
 
 # compiler flags:
 #  -g        adiciona informações de debug no executável
 #  -Wall     ativa a maioria dos erros de compilação
 #  -std=c+11 usa o standard mais recente
-CFLAGS = -g -Wall -std=c++11 -L lib -L bin -isystem inc
-LINK = -l:imgui.a $(LINKGL)
+CFLAGS = -g -Wall -std=c++14 -L lib -L bin -isystem inc
+LINK = -lm -l:imgui.a $(LINKGL)
 
 default: bin/main
 
