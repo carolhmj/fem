@@ -1,0 +1,14 @@
+#C++
+
+*.o
+
+#lib
+
+lib/*
+
+#inc
+
+inc/*
+
+#bin
+bin/*
